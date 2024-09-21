@@ -86,6 +86,8 @@ namespace Piccolo
             color_grading_map->m_height,
             color_grading_map->m_pixels,
             color_grading_map->m_format);
+        // should set lod to 1
+        // or use textureLod to sample this texture
     }
 
     void RenderResource::uploadGameObjectRenderResource(std::shared_ptr<RHI> rhi,
